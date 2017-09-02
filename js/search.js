@@ -1,5 +1,5 @@
 
-var queue = [];
+var queue = {};
 var showSuggestions = function (e) {
     // on pressing of enter we need to exit this as the suggestions are no longer needed
     if (e.which == 13) {
@@ -9,20 +9,12 @@ var showSuggestions = function (e) {
         substring1 = "RISK";
     if (string1.indexOf(substring1) !== -1) {
         closeSearchBar();
+        return
     }
 
 
     if ($('#searchHeader').val().indexOf('return of unsecured lending ') > -1) {
         closeSearchBar();
-        var txt = $('.srch-container input').val();
-        var substring1 = "state";
-        if (txt.indexOf(substring1) !== -1) {
-            $('.srch-container input').keypress(function (e) {
-                if (e.which == 13) {
-                    mapViewDedo()
-                }
-            })
-        }
         return;
     }
 
@@ -160,10 +152,11 @@ document.getElementById("nav-cust").addEventListener("focusout", function () {
 });
 
 function loadingStateOn() {
-
+    $('#searchicon').addClass('isLoading');
 };
 function loadingStateOff() {
-
+    unsecuredLoans();
+    $('#searchicon').removeClass('isLoading')
 };
 var loadTimeout = 2000;
 
@@ -177,13 +170,18 @@ function updateSearchResult(func_name, query) {
 function showRecent() {
     var txt = $('.srch-container input').val().toLowerCase();
     var localQueries = (txt.match("^what is the return of *")) ? product_queries : queries;
+
     if (txt.match("^what is the return of unsecured lending *")) {
         $('.srch-container input').keypress(function (e) {
             if (e.which == 13) {
-                unsecuredLoans();
+                loadingStateOn();
+                setTimeout(loadingStateOff, 1000);;
             }
         })
+
     }
+
+
 
     $('.search-container-parent.searchSuggest').html("");
     for (index in localQueries) {

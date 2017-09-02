@@ -331,6 +331,12 @@ text.wrap {
   background: url('../../images/ic-search-active.png');
   background-repeat: no-repeat;
 }
+.searchicon.isLoading {
+  margin-top: 4%;
+  width: 8%;
+  background-repeat: no-repeat !important;
+  background: url('../../images/loader@2x.gif');
+}
 .box {
   cursor: pointer;
   z-index: 10;
