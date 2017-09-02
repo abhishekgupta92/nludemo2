@@ -1,0 +1,60 @@
+/* General styles for all menus */
+
+.cbp-spmenu {
+    background-image: linear-gradient(157deg,#994bc4,#eb4783);
+	position: fixed;
+	z-index: 1110;
+}
+
+.cbp-spmenu h3 {
+	color: #ffffff;
+	font-size: 30px;
+	padding: 20px;
+	margin: 0;
+	font-weight: 500;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+	width: 400px;
+	height: 1080px;
+	top: 0;
+	z-index: 1004;
+}
+
+.cbp-spmenu-right {
+	right: -400px;
+}
+
+.cbp-spmenu-right.cbp-spmenu-open {
+	right: -3px;
+}
+
+/* Transitions */
+.cbp-spmenu {
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+@media screen and (max-height: 26.375em){
+
+	.cbp-spmenu-vertical {
+		font-size: 90%;
+		width: 190px;
+	}
+
+	.cbp-spmenu-left,
+	.cbp-spmenu-push-toleft {
+		left: -190px;
+	}
+
+	.cbp-spmenu-right {
+		right: -190px;
+	}
+
+	.cbp-spmenu-push-toright {
+		left: 190px;
+	}
+}

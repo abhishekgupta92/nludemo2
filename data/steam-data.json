@@ -1,0 +1,151 @@
+{
+  "rows": [
+    {
+      "metric": "1737050301",
+      "date": "2016-10-01T00:00:00.000Z",
+      "product": "Property Loan"
+    },
+    {
+      "metric": "125088131",
+      "date": "2016-08-01T00:00:00.000Z",
+      "product": "BL-General"
+    },
+    {
+      "metric": "31821299",
+      "date": "2016-09-01T00:00:00.000Z",
+      "product": "Personal Loan"
+    },
+    {
+      "metric": "225403755",
+      "date": "2016-10-01T00:00:00.000Z",
+      "product": "Loan Against shares/Securit"
+    },
+    {
+      "metric": "216390699",
+      "date": "2016-12-01T00:00:00.000Z",
+      "product": "Loan Against shares/Securit"
+    },
+    {
+      "metric": "436912726",
+      "date": "2017-01-01T00:00:00.000Z",
+      "product": "Property Loan"
+    },
+    {
+      "metric": "8000000",
+      "date": "2017-01-01T00:00:00.000Z",
+      "product": "Loan to Professional"
+    },
+    {
+      "metric": "999663468",
+      "date": "2016-12-01T00:00:00.000Z",
+      "product": "Property Loan"
+    },
+    {
+      "metric": "249806920",
+      "date": "2016-10-01T00:00:00.000Z",
+      "product": "BL-General"
+    },
+    {
+      "metric": "2403323799",
+      "date": "2016-08-01T00:00:00.000Z",
+      "product": "Property Loan"
+    },
+    {
+      "metric": "2563910",
+      "date": "2016-08-01T00:00:00.000Z",
+      "product": "Loan to Professional"
+    },
+    {
+      "metric": "14124024",
+      "date": "2016-07-01T00:00:00.000Z",
+      "product": "Personal Loan"
+    },
+    {
+      "metric": "1131633726",
+      "date": "2016-08-01T00:00:00.000Z",
+      "product": "Loan Against shares/Securit"
+    },
+    {
+      "metric": "301394865",
+      "date": "2017-01-01T00:00:00.000Z",
+      "product": "BL-General"
+    },
+    {
+      "metric": "175085903",
+      "date": "2016-12-01T00:00:00.000Z",
+      "product": "BL-General"
+    },
+    {
+      "metric": "769126638",
+      "date": "2016-07-01T00:00:00.000Z",
+      "product": "Loan Against shares/Securit"
+    },
+    {
+      "metric": "19468939",
+      "date": "2016-08-01T00:00:00.000Z",
+      "product": "Personal Loan"
+    },
+    {
+      "metric": "227147249",
+      "date": "2016-09-01T00:00:00.000Z",
+      "product": "BL-General"
+    },
+    {
+      "metric": "33528269",
+      "date": "2016-11-01T00:00:00.000Z",
+      "product": "Personal Loan"
+    },
+    {
+      "metric": "50187424",
+      "date": "2016-12-01T00:00:00.000Z",
+      "product": "Personal Loan"
+    },
+    {
+      "metric": "261145766",
+      "date": "2016-11-01T00:00:00.000Z",
+      "product": "BL-General"
+    },
+    {
+      "metric": "94974273",
+      "date": "2017-01-01T00:00:00.000Z",
+      "product": "Personal Loan"
+    },
+    {
+      "metric": "98124659",
+      "date": "2016-07-01T00:00:00.000Z",
+      "product": "BL-General"
+    },
+    {
+      "metric": "226125331",
+      "date": "2016-09-01T00:00:00.000Z",
+      "product": "Loan Against shares/Securit"
+    },
+    {
+      "metric": "26671081",
+      "date": "2016-10-01T00:00:00.000Z",
+      "product": "Personal Loan"
+    },
+    {
+      "metric": "1671613333",
+      "date": "2016-09-01T00:00:00.000Z",
+      "product": "Property Loan"
+    },
+    {
+      "metric": "1239013270",
+      "date": "2016-11-01T00:00:00.000Z",
+      "product": "Property Loan"
+    },
+    {
+      "metric": "1046490780",
+      "date": "2016-11-01T00:00:00.000Z",
+      "product": "Loan Against shares/Securit"
+    },
+    {
+      "metric": "1555024779",
+      "date": "2016-07-01T00:00:00.000Z",
+      "product": "Property Loan"
+    }
+  ],
+  "metric": "sum(reward)",
+  "chart_type": ""
+}

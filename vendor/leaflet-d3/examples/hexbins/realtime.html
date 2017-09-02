@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leaflet d3 HexBin Layer - Continuous Modification</title>
+
+	<link rel="stylesheet" href="../../node_modules/leaflet/dist/leaflet.css" />
+
+	<script src="../../node_modules/d3/build/d3.js" charset="utf-8"></script>
+	<script src="../../node_modules/d3-hexbin/build/d3-hexbin.js" charset="utf-8"></script>
+	<script src="../../node_modules/leaflet/dist/leaflet-src.js"></script>
+
+	<script src="../../dist/leaflet-d3.js" charset="utf-8"></script>
+
+<style>
+	.hexbin-hexagon {
+		stroke: #000;
+		stroke-width: .5px;
+	}
+</style>
+
+</head>
+<body>
+	<h2>Leaflet d3 Hexbin Example</h2>
+	<p>Demonstrates continuously changing data</p>
+
+	<!-- The map element -->
+	<div id="map" style="width: 600px; height: 400px; border: 1px solid #ccc"></div>
+	<button onclick="togglePlay()">Pause</button>
+
+	<script>
+
+		var center = [ 38.991709, -76.886109 ];
+		var layer = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			maxZoom: 18,
+			attribution: '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+		});
+
+		var map = L.map('map', {
+			layers: [ layer ],
+			center: L.latLng(center[0], center[1]), zoom: 6
+		});
+
+
+		// Options for the Hexbin
+		var options = {
+			// Transition duration for animations
+			duration: 50,
+			colorScaleExtent: [ 1, 5 ],
+			colorRange: [ 'blue', 'orange', 'red' ]
+		};
+
+		// Create the hexlayer and add it to the map
+		var hexLayer = L.hexbinLayer(options).addTo(map);
+
+
+		// Random data generators
+		var latFn = d3.randomNormal(center[0], 1);
+		var longFn = d3.randomNormal(center[1], 1);
+
+		var data = [];
+		var paused = false;
+
+		function doPings() {
+			if(!paused) {
+
+				// Modify the data array
+				data.push([ longFn(), latFn() ]);
+				if(data.length > 200){
+					data.shift();
+				}
+
+				// Pass the updated data array to the hexlayer
+				hexLayer.data(data);
+			}
+
+		    setTimeout(doPings, 100);
+		}
+		doPings();
+
+		function togglePlay() {
+			paused = !paused;
+			d3.select('button').text((paused)? 'Play' : 'Pause')
+		}
+	</script>
+</body>
+</html>
+

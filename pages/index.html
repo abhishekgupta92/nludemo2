@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ABFL Analytics | Homepage</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../vendor/leaflet/dist/leaflet.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div class="fall-back"></div>
+    <div id="commentsIndex"></div>
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top nav-cust" id="nav-cust" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="logo" onclick="window.location.href='index.html'"></div>
+                <div class="searchicon"></div>
+                
+				<div class="srch-container">
+                    <input type="text" placeholder="Hi Rakesh, ask a question..." class="searchHeader" id="searchHeader">
+                    <div class="search-container-parent searchSuggest">
+                    </div>
+                    <div class="search-container-parent buttons">
+                    </div>
+                </div>
+            </div>
+            <!-- /.navbar-header -->
+        </nav>
+
+        <div id="page-wrapper">
+            
+        <div class="inner-container">
+            <div class="row-fluid">
+                    <div class="bigCol" style="margin-bottom: 100px;">
+                        <div class="title"> %ROI
+                        </div>
+                        <div class="description"> Weighted
+                        </div>
+                        <div><img src="../images/img-chart-roi@2x.png" class="graphImage"/></div>
+                    </div>
+                    <div class="bigCol" style="margin-bottom: 100px;">
+                        <div class="title"> Average Tenure
+                        </div>
+                        <div class="description"> In Months
+                        </div>
+                        <div><img src="../images/img-chart-tenure@2x.png" class="graphImage"/></div>    
+                    </div>
+                <br>
+                    <div class="bigCol">
+                        <div class="title"> Average Ticket Size
+                        </div>
+                        <div class="description"> INR L
+                        </div>
+                        <div><img src="../images/img-chart-ticket@2x.png" class="graphImage"/></div>    
+                    </div>
+                    <div class="bigCol">
+                        <div class="title"> Book Size
+                        </div>
+                        <div class="description"> INR Cr
+                        </div>
+                        <div><img src="../images/img-chart-book@2x.png" class="graphImage"/></div>    
+                    </div>
+            </div>
+        </div>
+        </div>
+        <!-- /#page-wrapper -->
+
+		<div id="sidenav">    
+            <div class="sidenavModified" id="sidenavModified">
+                <div class="box first">
+    				<div>
+                        <div class="trending-text">
+                            What have been the product trends for ABFL in the last 12 months?<br></div>
+    					<br>
+    					<div class="subtitle"><img src="../images/ic-trending.png"   srcset="../images/ic-trending@2x.png 2x, ../images/ic-trending@3x.png 3x"
+                                class="ic_trending"><strong>
+                            TRENDING</strong>
+    					</div>    
+    				</div>
+                </div>
+            </div>
+			<div class="box selected whiteboxShadow ">
+				   <div>
+					   ABFL'S product performance over the last 5 years vs inflation<br>
+				   </div>
+            </div>
+                
+			<div class="box notselected1 whiteboxShadow ">
+				<div>
+					Customer Growth for in Q4 in the last 4 year
+				</div>
+			</div>
+			<div class="box notselected2 whiteboxShadow ">
+				<div>
+					Monthly profits as affected as affected by
+					ecter nal events
+				</div>            
+			</div>
+            <div class="box notselected3 whiteboxShadow ">
+				<div>
+					Monthly profits as affected as affected by
+					ecter nal events
+				</div>            
+			</div>
+            <div class="box notselected4 whiteboxShadow ">
+				<div>
+					Monthly profits as affected as affected by
+					ecter nal events
+				</div>            
+			</div>
+            <div class="box notselected5 whiteboxShadow ">
+				<div>
+					Monthly profits as affected as affected by
+					ecter nal events
+				</div>            
+			</div>
+            <div class="box notselected6 whiteboxShadow ">
+				<div>
+					Monthly profits as affected as affected by
+					ecter nal events
+				</div>            
+			</div>
+		</div>
+		
+		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+            
+		</nav>
+        <div class="stickyExportButton" >
+            <img src="../images/ic-export.svg" class="ic_export">
+        </div>
+		<div class="stickyButton" id="showRight">
+			<img src="../images/ic-insights.svg" class="ic_insights">
+		</div>
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../js/d3.v3.js"></script>
+    <script src="../js/classie.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/sidebar.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+<!--    <script src="https://d3js.org/d3.v3.min.js"></script>-->
+    <script src="../js/general.js"></script>
+    <script src="../vendor/leaflet/dist/leaflet-src.js"></script>
+    <script src="../vendor/d3-hexbin/build/d3-hexbin.min.js"></script>
+	<script src="../vendor/leaflet-d3/dist/leaflet-d3.min.js"></script>
+
+    <script src="../js/search.js"></script>
+	<script src="../js/double-bar-chart.js"></script>
+
+
+	<script src="../data/queries.js"></script>    
+    <script src="../js/card.js"></script>
+    <script src="../data/queries.js"></script>
+	
+	
+	<script src="../vendor/d3/steamgraph.js"></script>
+	<script src="../js/leaflet.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+    <script src="../js/comments.js"></script>
+
+</body>
+
+</html>

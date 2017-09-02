@@ -1,0 +1,274 @@
+#sidenav {
+    overflow-y: scroll;
+    position: absolute;
+    width: 400px; 
+    top:0px;
+    right: 0px;
+    height: 1080px;
+
+}
+.row.topBar {
+    margin: 0;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    background-color: #824bc4;
+}
+.box {
+    transition: 0.3s;
+
+	width: 280px;
+	border-radius: 4px;
+	margin: 15px auto;
+	padding: 20px;
+	color: #fff;
+	background-color: white;
+	box-shadow: 0 2px 80px 0 rgba(202, 33, 46, 0.14);
+	color: @charcoal-grey;
+    position: relative;
+    top:0;
+}
+
+#pinmodified{
+    &.isDisable{
+        display:none !important;
+    }
+}
+
+.trending2{
+    display: none;
+    &.isActive{
+        transition: 0.5s;
+        margin-top: 10%;
+    }
+    &.isCalled{
+        display:block;
+    }
+}
+
+.whiteboxShadow {
+box-shadow: 0 2px 80px 0 rgba(60, 98, 159, 0.15)!important;
+}
+
+.commentText {
+    border-radius: 5px;
+    background-color: rgba(61, 67, 81, 0.2);
+    color: white;
+    outline: none;
+    opacity: 0.8;
+    border: none;
+    resize: none;
+    padding: 16px;
+    font-size: 18px;
+    height: 160px;
+}
+
+.save-cancel{
+    &.isDisable{
+        display: none !important;
+    }
+}
+
+.float-right {
+    margin-right: 20px;
+    margin-top: 10px;
+    float: right;
+}
+
+.btun {
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.83;
+    color: white;
+    cursor: pointer;
+}
+
+.btun.save {
+  border-radius: 100px;
+  background-color: #ffffff;
+  box-shadow: 0 9px 17px 0 rgba(202, 33, 46, 0.2); 
+  padding: 8px 20px;
+  margin: 5px;
+  color: #824bc4;
+}
+
+.nav-cust{
+    border:0px;
+    box-shadow: 0 2px 80px 0 rgba(60, 98, 159, 0.05);
+    transition: 0.3s;
+    height:120px;
+    position: absolute;
+    width: 100%;
+    z-index: 900;
+    top: 0px;
+    &.isActive{
+        transition: 0.3s;
+         -webkit-transition:0.3s;
+        height: 350px !important;
+    }
+   
+}
+
+.box.selected {
+	margin: 25px auto;
+	padding: 45px;
+	width: 320px;
+}
+
+.box.SelectedModifiedFirst{
+    margin: 25px auto;
+    padding: 15px 40px;
+    width: 320px;
+    padding-top: 35px;
+}
+
+.box.first {
+	color: white;
+	background-image: linear-gradient(to right, #eb4783, #824bc4);
+    margin-top: 3.2%;
+    &.isActive{
+        transition:0.5s;
+        margin-top:10%;
+    }
+}
+
+.box {
+  z-index: 1000;
+}
+.box.search:first-child {
+  z-index: 1000;
+}
+.box.search {
+  z-index: 1;
+}
+
+.box.trendingModified{
+    color:#ffffff;
+    background-image: linear-gradient(219deg, #c50052, @red-wine);
+    margin-top: 3.2%;
+}
+
+.trending_box_container{
+    position: relative;
+    z-index: 950;
+    height: 0px;
+    margin-top: -53px !important;
+    visibility: hidden;
+    &.isActive{
+        transition:all 0.2s ease;
+        height:10%;
+        margin-top: 3.2% !important;
+        visibility: visible;
+    }
+    &.isSearchActive{
+        height:10%;
+        visibility: visible;
+        transition:0.5s;
+        margin-top:10% !important;
+    }
+}   
+
+
+.box.firstModified{
+    z-index: 500;
+    font-size: 30px !important;
+    font-weight: 500 !important;
+    line-height: 1.17 !important;
+	background-color: #ffffff;
+    margin-top: 3.2%;
+    &.isActive{
+        transition:0.5s;
+        margin-top:10%;
+    }
+}
+
+.firstModifiedText{
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 1.17;
+}
+
+
+
+.box:hover{
+
+    position:relative ;
+    top:-5px;    
+}
+.box_two{
+	width: 280px;
+	border-radius: 4px;
+	margin: 50px;
+	padding: 20px;
+	color: black;
+	background: white;
+	background-image: linear-gradient(219deg, #c50052, var(--red-wine));
+	box-shadow: 0 2px 80px 0 rgba(202, 33, 46, 0.14);
+}
+
+//nav
+.row.comment{
+  margin: 15px;
+  margin-bottom: 0px;
+}
+.commentText {
+  
+}
+.image{
+    margin:30px;
+}
+.row.horizontal {
+     background-color: #824bc4;
+    margin: 0px;
+    padding: 10px;
+}
+.first-container{
+    width: 100%;
+    padding: 20px;
+}
+
+.copy_pros{
+  opacity: 0.4;
+  font-family: Theinhardt;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.83;
+  text-align: left;
+  color: #ffffff;
+  margin: 0px;
+}
+
+.row.meriRow {
+  margin: 5px;
+  margin-bottom: 50px; 
+  margin-left: 20px;
+  margin-right: 15px;
+}
+
+.comment-for-item {
+  font-family: Theinhardt;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.39;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: #ffffff;
+    margin: 0px;
+}
+.btnAdd{
+    text-align: center;
+}
+.btnAddComment{
+    background-color: #fff;
+    padding: 10px 18px 10px 18px;
+    border-radius: 50px;
+    color: #920029;
+}
+.bold-Number{
+    opacity: 0.2;
+    font-family: Theinhardt;
+    font-size: 64px;
+    font-weight: 500;
+    text-align: center;
+    color: #000000;
+}

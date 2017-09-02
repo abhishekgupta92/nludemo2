@@ -1,0 +1,60 @@
+/* STEAMGRAPH */
+.steamgraph.chart svg{
+	z-index: 10;
+	position: absolute;
+	left: 0px;
+	top: 310px;
+	.y-axis text {
+		font-size: 10px;
+		color: #383f49;
+	}
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+  shape-rendering: crispEdges;
+}
+
+button {
+
+  right: 50px;
+  top: 10px;
+}
+
+.filled {
+	fill: url(#mainGradient);
+}
+
+.y-axis path{
+	stroke-width: 0px;
+	fill: none;
+}
+
+.x-axis {
+	.selectedTime {
+		font-size: 36px;
+		fill: @red-wine;
+		opacity: 0.9;
+    -webkit-transition: font-size 0.4s;
+       -moz-transition: font-size 0.4s;
+         -o-transition: font-size 0.4s;
+            transition: font-size 0.4s;
+	}
+	path {
+		stroke-width: 0px;
+		fill: none;
+	}
+	text {		
+		opacity: 0.4;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 0.92;
+		z-index: 100;
+		color: @charcoal-grey;
+	}
+	line {
+		stroke-width: 0px;		
+	}
+}
