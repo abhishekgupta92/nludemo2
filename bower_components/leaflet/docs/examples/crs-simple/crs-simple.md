@@ -46,7 +46,6 @@ And show the whole map:
 
 	map.fitBounds(bounds);
 
-{% include frame.html url="crs-simple-example1.html" %}
 
 This example doesn't quite work, as we cannot see the whole map after doing a `fitBounds()`.
 
@@ -77,7 +76,6 @@ While we're at it, let's add some markers:
 	L.marker(sol).addTo(map);
 	map.setView( [70, 120], 1);
 
-{% include frame.html url="crs-simple-example2.html" %}
 
 ### This is not the `LatLng` you're looking for
 
@@ -114,4 +112,3 @@ Now we can add a few stars and even a navigation line with `[x, y]` coordinates:
 
 The map looks pretty much the same, but the code is a bit more readable:
 
-{% include frame.html url="crs-simple-example3.html" %}
