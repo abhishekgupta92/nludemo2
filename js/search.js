@@ -169,7 +169,7 @@ function updateSearchResult(func_name, query) {
 
 function showRecent() {
     var txt = $('.srch-container input').val().toLowerCase();
-    var localQueries = (txt.match("^what is the return of *")) ? product_queries : queries;
+    var localQueries = (txt.match(/the return of/gi)) ? product_queries : queries;
 
     if (txt.match("^what is the return of unsecured lending *")) {
         $('.srch-container input').keypress(function (e) {
