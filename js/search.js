@@ -148,7 +148,7 @@ function closeSearchBar() {
 document.getElementById("nav-cust").addEventListener("focusout", function () {
     setTimeout(function () {
         closeSearchBar();
-    }, 100);
+    }, 200);
 });
 
 function loadingStateOn() {
@@ -162,6 +162,7 @@ var loadTimeout = 2000;
 
 function updateSearchResult(func_name, query) {
     // loadingStateOn();
+    console.log("updateSearchResult");
     var txt = $('.srch-container input').val(query);
     eval(func_name + "()");
     // setTimeout(loadingStateOff, loadTimeout);
@@ -171,17 +172,14 @@ function showRecent() {
     var txt = $('.srch-container input').val().toLowerCase();
     var localQueries = (txt.match(/the return of/gi)) ? product_queries : queries;
 
-    if (txt.match("^what is the return of unsecured lending *")) {
+    if (txt.match(/return of unsecured lending/gi)) {
         $('.srch-container input').keypress(function (e) {
             if (e.which == 13) {
                 loadingStateOn();
                 setTimeout(loadingStateOff, 1000);;
             }
         })
-
     }
-
-
 
     $('.search-container-parent.searchSuggest').html("");
     for (index in localQueries) {
