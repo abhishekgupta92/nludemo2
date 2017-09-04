@@ -35,8 +35,15 @@ function addSidebar(addComment, karDoAdd) {
             </div>`;
     }
         var addCommentBtn =  
-    `<div class="comment-reply"></div><div class="sidebar-sources"><div class="sidebar-sources-container"><div class="sidebar-sources-content"><div class="sidebar-sources-content-header">SOURCES</div><br/>
-TEST DWH</div></div>`;
+    `<div class="comment-reply"></div><div class="sidebar-sources"><div class="sidebar-sources-container"></div>`;
+    // <div class="sidebar-sources-content">
+    //     <div class="sidebar-sources-content-header">
+    //         SOURCES
+    //     </div>
+    //     <br/>
+    //     TEST DWH
+    // </div>
+    // </div>`;
 
    
 
