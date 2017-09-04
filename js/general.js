@@ -35,7 +35,7 @@ function unsecuredNBFC() {
 	list.push(x);
     $('.modifiedfirstText2').text(list.join(' '));
 	$('#searchHeader').val(list.join(' '));
-	singleBarChartNBFC();
+	singleBarChart();
 	removeHeaderButtons();
     
 	addHeaderButton("VS RISK", "doubleBarChartOk");

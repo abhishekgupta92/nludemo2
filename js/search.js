@@ -161,11 +161,10 @@ function loadingStateOff() {
 var loadTimeout = 2000;
 
 function updateSearchResult(func_name, query) {
-    // loadingStateOn();
-    console.log("updateSearchResult");
+    loadingStateOn();
     var txt = $('.srch-container input').val(query);
     eval(func_name + "()");
-    // setTimeout(loadingStateOff, loadTimeout);
+    setTimeout(loadingStateOff, 500);
 }
 
 function showRecent() {
@@ -176,7 +175,7 @@ function showRecent() {
         $('.srch-container input').keypress(function (e) {
             if (e.which == 13) {
                 loadingStateOn();
-                setTimeout(loadingStateOff, 1000);;
+                setTimeout(loadingStateOff, 500);;
             }
         })
     }
