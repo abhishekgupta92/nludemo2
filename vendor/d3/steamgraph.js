@@ -16,7 +16,6 @@ var tooltip = d3v3.select("body")
 .attr("class", "hoverTooltip");
 
 function drawSteamGraph(sdata, target) {
-    console.log('ok',sdata);
     target = 'fake';
     $('body #commentsIndex').html("");
     // addSearchCard();
